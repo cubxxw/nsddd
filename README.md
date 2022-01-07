@@ -20,7 +20,7 @@ web端：[http://zt.nsddd.top/](http://zt.nsddd.top/)
 
 ### web端：[https://github.com/3293172751/nsssds/tree/master/web](https://github.com/3293172751/nsssds/tree/master/web)
 
-### 小程序：[https://github.com/3293172751/nsssds/tree/master/intelli-parkinglotservice](https://github.com/3293172751/nsssds/tree/master/intelli-parkinglotservice)
+### 小程序：[https://github.com/3293172751/nsssds/tree/master/wxmin_apps](https://github.com/3293172751/nsssds/tree/master/wxmin_apps)
 
 ## 熟悉项目（web)
 
