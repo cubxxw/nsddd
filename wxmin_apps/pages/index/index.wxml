@@ -1,0 +1,73 @@
+<!--index.wxml-->
+
+<map id="map" longitude="102.6569366455" latitude="25.0821785206" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location class="map"></map>
+<view class="nearby-parkingLot">
+  <view class="plain-text inline-block">在您附近找到</view>
+  <view class="left-number inline-block">3</view>
+  <view class="plain-text inline-block">校园停车场</view>
+</view>
+<view class="parking-list-container">
+  <view class="parking-list-section center" bindtap="bindParkingListItemTap">
+    <view class="content">
+      <view class="parking-list-item flex">
+        <view class="parking-name">武汉文理学院001号停车场</view>
+      </view>
+      <view class="parking-list-item flex">
+        <view class="u-1of2 plain-text">距您:
+          <view class="parking-distance">50米</view>
+        </view>
+        <view class="plain-text">剩余车位:
+          <view class="left-number">102</view>
+        </view>
+      </view>
+    </view>
+    <image class="arrow-right" src="/images/arrowright.png"></image>
+    <!--<view class="menu-button">预约</view>-->
+  </view>
+  <view class="parking-list-section center">
+    <view class="content">
+      <view class="parking-list-item flex">
+        <view class="parking-name">武汉文理学院003号停车场</view>
+      </view>
+      <view class="parking-list-item flex">
+        <view class="u-1of2 plain-text">距您:
+          <view class="parking-distance">200米</view>
+        </view>
+        <view class="plain-text">剩余车位:
+          <view class="left-number">43</view>
+        </view>
+      </view>
+    </view>
+    <image class="arrow-right" src="/images/arrowright.png"></image>
+  </view>
+  <view class="parking-list-section center">
+    <view class="content">
+      <view class="parking-list-item flex">
+        <view class="parking-name">胜海大道001号停车场</view>
+      </view>
+      <view class="parking-list-item flex">
+        <view class="u-1of2 plain-text">距您:
+          <view class="parking-distance">1700米</view>
+        </view>
+        <view class="plain-text">剩余车位:
+          <view class="left-number">23</view>
+        </view>
+      </view>
+    </view>
+    <image class="arrow-right" src="/images/arrowright.png"></image>
+  </view>
+
+</view>
+
+<view class="menu-annotation">更多</view>
+<view class="menu-list-container center">
+  <view class="menu-list-item">
+    <image src="/images/icon/day_view.png" class="menu-list-icon"></image>
+    <view class="menu-list-text">查看全部</view>
+    <image class="menu-arrow-right" src="/images/arrowright.png"></image>
+  </view>
+  <view class="bottom-btn plain u-auto" style="" bindtap="openParkingMap">
+    <image class="button-icon" src="/images/icon/location.png"></image>
+    查看车辆位置
+  </view>
+</view>

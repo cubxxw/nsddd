@@ -1,0 +1,17 @@
+<!--pages/parkinglotMap/parkinglotMap.wxml-->
+
+<view class="float-info">您的车辆位于{{mapData.area}}区{{mapData.carPositionNum}}车位</view>
+<!--<button bindtap="searchBluetooth">搜索蓝牙</button>
+<block wx:for="{{bluetoothDevice}}">
+<block wx:if="{{item.name=='AprilBeacon'}}">
+<view class="info-list-container">
+    <view class="classname">RSSI:{{item.RSSI}}</view>
+    <view class="classname">设备Id:{{item.deviceId}}</view>
+    <view class="classname">名称:{{item.name}}</view>
+    <view class="classname" style="color:blue">距离:{{item.distance}}</view>
+  </view>
+  </block>
+</block>-->
+<canvas canvas-id="parking-map" style="position:absolute;height:{{height}};width:{{width}}" bindtouchstart="start" bindtouchmove="move" bindtouchend="end" />
+<canvas canvas-id="parking-map-bluetooth" style="position:absolute;height:{{height}};width:{{width}}" bindtouchstart="start" bindtouchmove="move" bindtouchend="end" />
+  <canvas canvas-id="direction" style="position:absolute;height:{{height}};width:{{width}}" bindtouchstart="start" bindtouchmove="move" bindtouchend="end" />

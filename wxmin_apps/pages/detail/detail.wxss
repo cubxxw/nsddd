@@ -1,0 +1,39 @@
+/* pages/detail/detail.wxss */
+page{
+    height:100%;
+    width:100%;
+}
+.detail-container{
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 30rpx;
+}
+
+.parking-name{
+    color: white;
+    font-size: 20px;
+    margin: 15rpx;
+    position: absolute;
+    bottom: 20rpx;
+    left: 20rpx;
+    
+}
+
+.time{
+    color: lightslategrey;
+    font-size: 14px;
+}
+
+.swiper-img{
+    
+    height: 500rpx;
+    width: 100%;
+}
+
+.slide-image{
+    filter: blur(5rpx);
+    width: 100%;
+    height:500rpx;
+}
+

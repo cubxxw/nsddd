@@ -1,0 +1,50 @@
+
+<!--pages/parkingLotList/parkingLotList.wxml-->
+<view class="parking-list-section center">
+  <view class="content">
+    <view class="parking-list-item flex">
+      <view class="parking-name">武汉文理学院003号停车场</view>
+    </view>
+    <view class="parking-list-item flex">
+      <view class="u-1of2 plain-text">距您:
+        <view class="parking-distance">50米</view>
+      </view>
+      <view class="plain-text">剩余车位:
+        <view class="left-number">102</view>
+      </view>
+    </view>
+  </view>
+    <image class="arrow-right" src="/images/arrowright.png"></image>
+</view>
+<view class="parking-list-section center">
+  <view class="content">
+    <view class="parking-list-item flex">
+      <view class="parking-name">武汉文理学院002号停车场</view>
+    </view>
+    <view class="parking-list-item flex">
+      <view class="u-1of2 plain-text">距您:
+        <view class="parking-distance">200米</view>
+      </view>
+      <view class="plain-text">剩余车位:
+        <view class="left-number">43</view>
+      </view>
+    </view>
+  </view>
+    <image class="arrow-right" src="/images/arrowright.png"></image>
+</view>
+<view class="parking-list-section center">
+  <view class="content">
+    <view class="parking-list-item flex">
+      <view class="parking-name">胜海大道一号停车场</view>
+    </view>
+    <view class="parking-list-item flex">
+      <view class="u-1of2 plain-text">距您:
+        <view class="parking-distance">1700米</view>
+      </view>
+      <view class="plain-text">剩余车位:
+        <view class="left-number">123</view>
+      </view>
+    </view>
+  </view>
+    <image class="arrow-right" src="/images/arrowright.png"></image>
+</view>

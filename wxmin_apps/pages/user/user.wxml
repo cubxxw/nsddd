@@ -1,0 +1,28 @@
+<!--pages/user/user.wxml-->
+<view class="panel">
+  <image class="panel-pic" src="/images/bg.jpg" mode="aspectFill">
+  </image>
+  <image class="avatar-icon" src="{{avatarUrl}}"></image>
+  <view class="nickName">{{userInfo.nickName}}</view>
+</view>
+
+<view class="menu-list-container center">
+  <view class="menu-list-item">
+    <image src="/images/icon/day_view.png" class="menu-list-icon"></image>
+    <view class="menu-list-text">我的车牌</view>
+    <view class="menu-comment">鄂A·897H3</view>
+    <image class="menu-arrow-right" src="/images/arrowright.png"></image>
+  </view>
+  <view class="menu-list-item">
+    <image src="/images/icon/money_bag.png" class="menu-list-icon"></image>
+    <view class="menu-list-text">消费记录</view>
+    <view class="menu-comment">查看消费记录</view>
+    <image class="menu-arrow-right" src="/images/arrowright.png"></image>
+  </view>
+</view>
+<view class="menu-annotation">已登录手机号:18672749565</view>
+<view class="menu-list-container center">
+  <view class="menu-list-item center">
+    <view class="text-center" style="color:red;font-size:16px;">退出登录</view>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+/* pages/parkinglotMap/parkinglotMap.wxss */
+
+page{
+    width: 100%;
+    height: 100%;
+    /*background-color: #f5f3f0;*/
+    
+}
+
+.float-info{
+  position:fixed;
+  right:15rpx;
+  top:15rpx;
+  font-size:15px;
+  background-color:dodgerblue;
+  border-radius: 10px;
+  padding: 10rpx;
+  color: white;
+  
+}

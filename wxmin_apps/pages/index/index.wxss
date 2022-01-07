@@ -1,0 +1,66 @@
+/**index.wxss**/
+
+
+.bottom-bar {
+  background-color: white;
+}
+
+.map{
+  width:100%;
+  height:40%;
+  margin: 0 auto;
+}
+.parking-list-container{
+  margin-bottom: 15rpx;
+}
+.parking-list-section{
+    background-color: white;
+    /*padding: 20rpx;*/
+    /*margin: 20rpx 0;*/
+    display: flex;
+    /*border-bottom: 1rpx solid gainsboro;*/
+    border-radius: 15rpx;
+    margin:10rpx 15rpx;
+}
+
+.parking-list-section:last-child{
+    
+    border-bottom: none;
+}
+
+.parking-list-item{
+    margin: 15rpx;
+}
+
+.plain-text{
+    font-size: 14px;
+    color: gray;
+}
+
+.parking-name{
+    font-size: 18px;
+    color:black;
+}
+
+.left-number{
+    display: inline-block;
+    color: green;
+    font-size: 16px;
+}
+
+.parking-distance{
+    display: inline-block;
+    font-size: 14px;
+    color: gray;
+}
+
+.content{
+    justify-content: space-between;
+    padding:10rpx;
+    flex: 1
+}
+
+.nearby-parkingLot{
+  padding: 10rpx;
+}
+

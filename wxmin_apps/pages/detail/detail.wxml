@@ -1,0 +1,53 @@
+<!--pages/detail/detail.wxml-->
+
+<!--<view class="detail-container flex">
+    <view class="parking-name">武汉文理学院9009号停车场</view>
+    <view class="parking-left-text">当前剩余车位</view>
+    <view class="parking-left-number">59</view>
+    <view class="time">刷新时间：2017-04-22 22:40:15</view>
+    <view class="time">当前时间：2017-04-22 22:40:17</view>
+</view>-->
+<view style="width:100%;height:auto;position: relative;margin-bottom:15rpx;">
+  <swiper autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper-img">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode="scaleToFill" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="parking-name">武汉文理学院003停车场</view>
+</view>
+<view class="info-list-container">
+  <view class="info-list-item">
+    <image class="info-list-icon" src="/images/rmb.png"></image>
+    <view class="info-list-content">
+      <view class="info-list-key">价格</view>
+      <view class="info-list-value">首小时 5元，之后 3元/小时</view>
+    </view>
+  </view>
+  <view class="info-list-item">
+    <image class="info-list-icon" src="/images/icon/mobile_02.png"></image>
+    <view class="info-list-content">
+      <view class="info-list-key">位置</view>
+      <view class="info-list-value">武汉胜海大道1号</view>
+    </view>
+  </view>
+  <view class="flex-row" style="margin:50rpx 0 20rpx 0">
+    <view class="flex-column" style="flex:0 0 48%">
+      <view class="text-center" style="font-size:16px;color:gray;margin:15rpx 0;">总车位</view>
+      <view class="text-center" style="font-size:30px;color:orange;margin:15rpx 0;">120</view>
+    </view>
+    <view class="x-sidebar"></view>
+    <view class="u-auto flex-column">
+      <view class="text-center" style="font-size:16px;color:gray;margin:15rpx 0;">剩余车位</view>
+      <view class="text-center" style="font-size:30px;color:green;margin:15rpx 0;">48</view>
+    </view>
+  </view>
+</view>
+
+<view class="bottom-btn-group">
+  <view class="bottom-btn primary u-1of2" bindtap="preOrder">预约车位</view>
+  <view class="bottom-btn plain u-auto" bindtap="openLocation">
+    <image class="button-icon" src="/images/icon/map_marker.png"></image>
+    查看路线</view>
+</view>

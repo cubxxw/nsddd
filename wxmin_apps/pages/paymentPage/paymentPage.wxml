@@ -1,0 +1,36 @@
+<!--pages/paymentPage/paymentPage.wxml-->
+<view class="info-list-container" style="">
+  <view class="info-list-item">
+    <image class="info-list-icon" src="/images/icon/crib.png"></image>
+    <view class="info-list-content">
+      <view class="info-list-key">车牌号</view>
+      <view class="info-list-value">{{item.PlateNumber}}</view>
+    </view>
+  </view>
+  <view class="info-list-item">
+    <image class="info-list-icon" src="/images/icon/location.png"></image>
+    <view class="info-list-content">
+      <view class="info-list-key">车辆位置</view>
+      <view class="info-list-value">{{item.ParkingPosition}}</view>
+    </view>
+  </view>
+  <view class="info-list-item">
+    <image class="info-list-icon" src="/images/icon/steering_wheel.png"></image>
+    <view class="info-list-content">
+      <view class="info-list-key">入库时间</view>
+      <view class="info-list-value">{{item.GenerateDate}}</view>
+    </view>
+
+  </view>
+  <view class="info-list-item">
+    <image class="info-list-icon" src="/images/icon/alarm_clock.png"></image>
+    <view class="info-list-content">
+      <view class="info-list-key">停放时间</view>
+      <view class="info-list-value">1小时12分</view>
+    </view>
+
+  </view>
+  <view class="text-center" style="margin:40rpx 0 10rpx 0;font-size:16px;color:grey;">共计消费</view>
+  <view class="text-center" style="margin:10rpx 0 40rpx 0;font-size:40px">¥5.00</view>
+</view>
+<button style="margin:40rpx" type="primary" >立即支付</button>

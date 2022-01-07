@@ -1,0 +1,26 @@
+
+<!--pages/login/login.wxml-->
+<view class="container">
+  <view class="flex">
+    <view class="section">
+      <view class="login-section_title">手机号</view>
+      <view class="section_input">
+        <input name="passengerName" value="{{passengerName}}" placeholder="输入手机号" bindinput="bindNameInput" />
+      </view>
+    </view>
+    <view class="get-verify-code center flex">
+      获取验证码
+    </view>
+  </view>
+  <view class="section">
+    <view class="login-section_title">验证码</view>
+    <view class="section_input">
+      <input name="idno" value="{{idno}}" placeholder="输入验证码" bindblur="bindIdnoBlur" />
+    </view>
+  </view>
+</view>
+<button type="primary">登录</button>
+<view class="flex center" style="margin:30rpx 0;">
+  <view class="tip_text" style="color:grey;">点击“登录”即表示您已同意</view>
+  <view class="tip_text" style="display:inline-block">《停车小程序使用条款》</view>
+</view>

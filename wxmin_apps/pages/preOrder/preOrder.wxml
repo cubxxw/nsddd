@@ -1,0 +1,39 @@
+<!--pages/preOrder/preOrder.wxml-->
+
+<view class="menu-list-container center">
+  <view class="menu-list-item">
+    <view class="menu-list-text">停车场</view>
+    <view class="menu-comment">武汉文理学院001号停车位</view>
+  </view>
+  <view class="menu-list-item">
+    <view class="menu-list-text">停车库</view>
+    <view class="menu-comment">A库</view>
+  </view>
+</view>
+
+<view class="menu-list-container center">
+  <view class="menu-list-item">
+    <view class="menu-list-text">预留时间</view>
+    <view class="menu-comment">30分钟</view>
+    <image class="menu-arrow-right" src="/images/arrowright.png"></image>
+  </view>
+  <view class="menu-list-item">
+    <view class="menu-list-text">选择车辆</view>
+    <view class="menu-comment">鄂A88888</view>
+    <image class="menu-arrow-right" src="/images/arrowright.png"></image>
+  </view>
+  <view class="menu-list-item">
+    <view class="menu-list-text">充电桩</view>
+    <view class="menu-comment">需要</view>
+    <image class="menu-arrow-right" src="/images/arrowright.png"></image>
+  </view>
+</view>
+
+<view class="bottom-btn-group">
+<view class="bottom-btn primary u-auto" bindtap="preOrder">提交预约</view>
+</view>
+
+<view class="flex center" style="margin:30rpx 0;">
+  <view class="tip_text" style="color:grey;">点击“预约”即表示您已同意</view>
+  <view class="tip_text" style="display:inline-block">《奥多停车+ 使用条款》</view>
+</view>

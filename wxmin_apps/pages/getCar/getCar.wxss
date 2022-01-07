@@ -1,0 +1,105 @@
+/* pages/getCar/getCar.wxss */
+
+.plate {
+  border: 3px silver solid;
+  border-radius: 10px;
+  background-color: #2b73c5;
+  color: white;
+  padding: 15rpx;
+  position: absolute;
+  top: -40rpx;
+  right: 10rpx;
+}
+
+.plate-input-box-container {
+  /*background-color: white;
+  margin: 15rpx 0;
+  padding: 0 10rpx;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0rpx 1rpx 5px #888;*/
+  position: relative;
+  top:-500rpx;
+}
+
+.plate-input-box {
+
+  margin: 30rpx auto;
+  width: 85%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  border: 1rpx dodgerblue solid;
+  border-radius: 15rpx;
+}
+
+.plate-input-digit {
+  text-align: center;
+  font-size: 30px;
+  flex: 1;
+  border-left: 1rpx lightgrey solid;
+  height: 90rpx;
+  line-height: 90rpx;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.plate-input-digit-hover {
+  border: 1px orangered solid;
+  line-height: 90rpx;
+  overflow: hidden;
+}
+
+.plate-input-digit:first-child {
+  border-top-left-radius: 13rpx;
+  border-bottom-left-radius: 13rpx;
+  border-left: none;
+  background-color: dodgerblue;
+  color: white;
+}
+
+.plate-input-digit:nth-child(2) {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.plate-input-digit:last-child {
+  border-top-right-radius: 13rpx;
+  border-bottom-right-radius: 13rpx;
+}
+
+.plate-keyboard-container {
+  margin: 20rpx auto;
+  width: 85%;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px lightgray solid;
+  border-radius: 15rpx;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.plate-keyborad-key {
+  width: 70rpx;
+  height: 70rpx;
+  background-color: white;
+  border: 1rpx lightgray solid;
+  border-radius: 50%;
+  line-height: 70rpx;
+  margin: 10rpx;
+  text-align: center;
+  font-weight: bold;
+}
+
+.plate-keyborad-key-hover {
+  background-color: royalblue;
+  color: white;
+  width: 70rpx;
+  height: 70rpx;
+  border: 1rpx lightgray solid;
+  border-radius: 50%;
+  line-height: 70rpx;
+  margin: 10rpx;
+  text-align: center;
+}

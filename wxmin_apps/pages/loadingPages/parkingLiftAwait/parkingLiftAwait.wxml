@@ -1,0 +1,9 @@
+<!--pages/loadingPages/parkingLiftAwait/parkingLiftAwait.wxml-->
+<text>pages/loadingPages/parkingLiftAwait/parkingLiftAwait.wxml</text>
+<view class="loadingContainer">
+  <view class="loadingContent">
+    <view>{{loadingText}}</view>
+    <progress percent="{{percent}}" show-info />
+  </view>
+    
+</view>

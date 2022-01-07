@@ -1,0 +1,40 @@
+/* pages/parkingLotList/parkingLotList.wxss */
+page {
+  background-color: #ebebeb;
+}
+
+.parking-list-section{
+    background-color: white;
+    display: flex;
+    border: 1rpx solid gainsboro;
+}
+.parking-list-item{
+    margin: 15rpx;
+}
+
+.plain-text{
+    font-size: 14px;
+    color: gray;
+}
+
+.parking-name{
+    font-size: 18px;
+    color: green;
+}
+
+.left-number{
+    display: inline-block;
+    color: orangered;
+    font-size: 14px;
+}
+
+.parking-distance{
+    display: inline-block;
+    font-size: 14px;
+    color: gray;
+}
+
+.content{
+    justify-content: space-between;
+    flex: 1
+}

@@ -1,0 +1,85 @@
+<!--查询到停车记录-->
+<block wx:if="{{hasUnpaidOrders}}">
+  <view class="menu-annotation">查询到您的{{orders.length}}条停车记录：</view>
+  <block wx:for="{{orders}}">
+    <view class="info-list-container" style="">
+      <view class="info-list-item">
+        <image class="info-list-icon" src="/images/icon/crib.png"></image>
+        <view class="info-list-content">
+          <view class="info-list-key">车牌号</view>
+          <view class="info-list-value">{{item.PlateNumber}}</view>
+        </view>
+      </view>
+      <view class="info-list-item">
+        <image class="info-list-icon" src="/images/icon/location.png"></image>
+        <view class="info-list-content">
+<view class="info-list-key">车辆位置</view>
+        <view class="info-list-value">{{item.ParkingPosition}}</view>
+        </view>
+        
+      </view>
+      <view class="info-list-item">
+        <image class="info-list-icon" src="/images/icon/steering_wheel.png"></image>
+        <view class="info-list-content">
+        <view class="info-list-key">入库时间</view>
+        <view class="info-list-value">{{item.GenerateDate}}</view>
+        </view>
+        
+      </view>
+      <view class="info-list-item">
+        <image class="info-list-icon" src="/images/icon/alarm_clock.png"></image>
+        <view class="info-list-content">
+        <view class="info-list-key">停放时间</view>
+        <view class="info-list-value">1小时12分</view>
+        </view>
+        
+      </view>
+      <view class="text-center" style="margin:40rpx 0 10rpx 0;font-size:16px;color:grey;">共计消费</view>
+      <view class="text-center" style="margin:10rpx 0 40rpx 0;font-size:40px">¥{{item.Total}}</view>
+      <view class="bottom-btn-group" style="position:static">
+        <view class="bottom-btn primary u-auto" bindtap="bindPaymentBtnTap">
+          立即支付
+        </view>
+        <!--<view class="bottom-btn plain u-auto" style="" bindtap="openParkingMap">
+          <image class="button-icon" src="/images/icon/location.png"></image>
+          查看车辆位置
+        </view>-->
+      </view>
+    </view>
+  </block>
+  <view class="link text-center" bindtap="queryOtherPlate">查询其它车牌</view>
+</block>
+<!--未查询到停车记录-->
+<block wx:else>
+  <view class="menu-annotation text-center" style="margin:40rpx 0">未查询到停车记录,请尝试直接输入车牌查询</view>
+  <view animation="{{animationData}}" class="plate-input-box-container center">
+      <view class="flex plate-input-box">
+        <block wx:for="{{inputBoxData}}">
+          <view class="plate-input-digit {{item.hover}}" id='{{index}}' bindtap="bindDigitTap">{{item.char}}</view>
+        </block>
+      </view>
+  </view>
+
+  <block wx:if="{{currentPos!=null}}">
+    <view class="flex plate-keyboard-container" wx:if="{{currentPos==0}}">
+      <block wx:for="{{plateAreaCharset}}">
+        <view class="plate-keyborad-key" hover-stay-time='100' hover-class="plate-keyborad-key-hover" data-char='{{item}}' bindtap="bindKeyTap">{{item}}</view>
+      </block>
+    </view>
+
+    <view class="flex plate-keyboard-container" wx:else>
+      <block wx:for="{{plateDigitCharset}}">
+        <view class="plate-keyborad-key" hover-stay-time='100' hover-class="plate-keyborad-key-hover" data-char='{{item}}' bindtap="bindKeyTap">{{item}}</view>
+      </block>
+    </view>
+  </block>
+  <view class="spinner" wx:if="{{showLoading}}">
+    <view class="double-bounce1"></view>
+    <view class="double-bounce2"></view>
+  </view>
+  <!--<view class="bottom-btn-group">
+    <view class="bottom-btn primary" style="width:100%" bindtap="preOrder">查询</view>
+  </view>-->
+  <view class="cicle-btn" bindtap="query" hover-stay-time='100' hover-class="cicle-btn-hover">查询</view>
+
+</block>

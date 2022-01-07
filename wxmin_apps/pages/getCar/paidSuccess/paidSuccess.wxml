@@ -1,0 +1,3 @@
+<!--pages/getCar/paidSuccess/paidSuccess.wxml-->
+<import src="/pages/template.wxml" />
+<template is="success" data="{{...successTemplateData}}"></template>

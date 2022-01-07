@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/parkingLotList/parkingLotList",
+    "pages/login/login",
+    "pages/logs/logs",
+    "pages/user/user",
+    "pages/parkinglotMap/parkinglotMap",
+    "pages/preOrder/preOrder",
+    "pages/getCar/getCar",
+    "pages/getCar/paidSuccess/paidSuccess",
+    "pages/paymentPage/paymentPage",
+    "pages/loadingPages/parkingLiftAwait/p+arkingLiftAwait"
+  ],
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#268dcd",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icon/steering_wheel.png",
+        "selectedIconPath": "images/icon/steering_wheel.active.png",
+        "text": "预约停车"
+      },
+      {
+        "pagePath": "pages/getCar/getCar",
+        "iconPath": "images/icon/stopwatch.png",
+        "selectedIconPath": "images/icon/stopwatch.active.png",
+        "text": "取车"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "images/icon/user_male3.png",
+        "selectedIconPath": "images/icon/user_male3.active.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "斯达普智慧停车+",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#f7f7f7"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,22 @@
+<template name="success">
+  <view class="success_container">
+    <view class="sa-icon sa-success animate" style="display: block;">
+      <view class="sa-line sa-tip animateSuccessTip"></view>
+      <view class="sa-line sa-long animateSuccessLong"></view>
+      <view class="sa-placeholder"></view>
+      <view class="sa-fix"></view>
+    </view>
+    <view class="h2">{{title}}</view>
+    <view class="success_text">{{tip}}</view>
+    
+  </view>
+  <view class="bottom-btn-group">
+      <view class="bottom-btn primary u-auto" bindtap="confirmBtnAction">{{confirmBtnText}}</view>
+    </view>
+</template>
+<template name="loading">
+  <view class="spinner">
+    <view class="cube1"></view>
+    <view class="cube2"></view>
+  </view>
+</template>

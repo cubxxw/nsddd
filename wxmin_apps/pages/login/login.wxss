@@ -1,0 +1,22 @@
+/* pages/login/login.wxss */
+
+page {
+  background-color: #ebebeb;
+}
+
+.get-verify-code {
+  width: 200rpx;
+  padding: 10rpx;
+  background-color: #48C23D;
+  color: white;
+}
+
+.three-column {
+  padding: 10rpx;
+  column-count: 3;
+  column-gap: 10rpx;
+}
+
+.login-section-title {
+  width: 50rpx;
+}
